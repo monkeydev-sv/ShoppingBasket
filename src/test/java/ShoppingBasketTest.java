@@ -25,6 +25,11 @@ public void totalOfTwoItems(){
         ShoppingBasket basket = BuildBasketWithItems(new Item(100.0,1),new Item(200, 1));
     assertEquals(300.0, basket.getTotal(),0.0);
     }
+    @Test
+    public void totalOfItemWithQuantityTwo(){
+     ShoppingBasket basket = BuildBasketWithItems(new Item(100.0, 2));
+     assertEquals(200.0,basket.getTotal(),0.0);
+    }
 
     private ShoppingBasket BuildBasketWithItems(Item... items) {
         return new ShoppingBasket(Arrays.asList(items));
