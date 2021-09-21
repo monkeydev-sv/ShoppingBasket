@@ -7,8 +7,7 @@ this.items = items;
     }
 
     public double getTotal(){
-        if (items.isEmpty())
-        return 0.0;
-        return items.get(0).getUnitPrice();
+     return items.stream().mapToDouble(item-> item.getUnitPrice()).sum();
+
     }
 }
