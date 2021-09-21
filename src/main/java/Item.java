@@ -6,12 +6,10 @@ public class Item{
         this.quantity=quantity;
 
     }
-
-    public double getUnitPrice() {
-        return unitPrice;
-    }
-
     public double getQuantaty() {
         return quantity;
+    }
+    double getSubTotal() {
+        return unitPrice * (double) getQuantaty();
     }
 }

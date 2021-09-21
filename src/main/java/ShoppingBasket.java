@@ -7,7 +7,9 @@ this.items = items;
     }
 
     public double getTotal(){
-     return items.stream().mapToDouble(item-> item.getUnitPrice()* item.getQuantaty()).sum();
+     return items.stream().mapToDouble(item-> item.getSubTotal()).sum();
 
     }
+
+
 }
