@@ -1,5 +1,5 @@
 public class ShoppingBasket {
     public double getTotal(){
-        return -1.0;
+        return 0.0;
     }
 }
